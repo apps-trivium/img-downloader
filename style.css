@@ -1,0 +1,26 @@
+:root {
+    --body-font: 'Montserrat', 'sans-serif';
+    --body-background: #ffffff;
+    --body-color: #161616;
+    --body-font-size: 24px;
+}
+
+html, body {  padding: 0px; margin:0px;  min-height: 100vh; height: 100%;  position: relative;  }
+html * {max-height: 1000000px; box-sizing: border-box }
+body { position: relative; font-family: var(--body-font-size); background: var(--body-background); color: var(--body-color); }
+body, table, input, textarea { color: var(--body-color); font-size: var(--body-font-size); font-family: var(--body-font); font-weight: 400;  }
+
+.holder-page { margin: 0px auto; max-width: 1180px; padding: 40px 80px; }
+.holder-page-block {  padding-bottom: 28px; text-align: center; }
+.holder-page-block p { margin: 0 0 13px; }
+.holder-page-block p:last-child { margin: 0; }
+.holder-page-block img { width: 100%; max-width: 1020px; }
+h1 { margin: 10px 0; font-family: var(--body-font); font-weight: 600; font-size: 54px; }
+
+@media (max-width: 1020px) {
+    :root {
+        --body-font-size: 18px;
+    }
+    h1 { font-size: 48px; }
+    .holder-page { padding: 40px 40px; }
+}
